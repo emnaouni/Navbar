@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.service{
+  padding-bottom: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar a:hover{
+  color: #1398ea;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navDrop li{
+  color: black;
+}
+.navDrop{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.navDrop{
+  display: none; 
+    border: 2px solid #1398ea;
+    /* padding-top: 10px; */
+    position: absolute;
+    /* min-width: 161px; */
+    margin-left: 67px;
+    background: #ffffff;
+    box-shadow: 0 5px 10px 0 #d3cfc9;
+    margin-top: 8px;
+  }
+.service:hover .navDrop{
+  display: block;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navDrop li{
+  list-style-type: none;
+   padding: 7px 4px;
+}.navDrop ul{
+  margin: 0;
+  padding-left: 0px;
+}
+.navbar a{
+  color: black;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.navbar{
+  width: 219px;
+  padding: 7px 4px;
+  border-bottom: 3px solid;
+  border-bottom-color: #1398ea;
 }
