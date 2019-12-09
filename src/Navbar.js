@@ -3,14 +3,12 @@ import Dropdown from'./Dropdown'
 import './App.css';
 
 
-function Mynavbar()
+
+function Mynavbar(props)
 {
- return (<div className="navbar">
-     <a className="home" href="home"> Home</a>
-     <a className="service" href="service">Services<Dropdown/></a>
-      
-      <a className="contact" href="contact"> Contact</a>
-</div>
+return (<li><a className={props.item.active?'active':undefined} href={props.item.link}>{props.item.title}
+{props.item.subMenu&&<ul className="list-subMenu">{props.item.subMenu.map(el=><Dropdown miniMenu={el}/>)}</ul>}
+</a></li>
 );
  }
 

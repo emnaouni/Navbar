@@ -1,45 +1,54 @@
 
-.service{
+.navbar a{
   padding-bottom: 15px;
 }
 .navbar a:hover{
   color: #1398ea;
 }
-.navDrop li{
+.list-subMenu li{
   color: black;
 }
-.navDrop{
+.list-subMenu{
   display: flex;
   flex-direction: column;
 }
-.navDrop{
+.active{
+  color:red;
+}
+.list-subMenu{
   display: none; 
-    border: 2px solid #1398ea;
-    /* padding-top: 10px; */
-    position: absolute;
-    /* min-width: 161px; */
-    margin-left: 67px;
-    background: #ffffff;
-    box-shadow: 0 5px 10px 0 #d3cfc9;
-    margin-top: 8px;
+  border: 2px solid #1398ea;
+  /* padding-top: 10px; */
+  position: absolute;
+  /* min-width: 161px; */
+  margin-left: -6px;
+  background: #ffffff;
+  box-shadow: 0 5px 10px 0 #d3cfc9;
+  margin-top: 8px;
   }
-.service:hover .navDrop{
+li:hover .list-subMenu{
   display: block;
 }
-.navDrop li{
+.list-subMenu{
   list-style-type: none;
    padding: 7px 4px;
-}.navDrop ul{
+}.list-subMenu ul{
   margin: 0;
   padding-left: 0px;
 }
 .navbar a{
+  text-decoration: none;
+}
+.navbar li{
   color: black;
+  padding-bottom: 0px;
   text-decoration: none;
   padding-left: 10px;
   padding-right: 10px;
+  list-style: none;
 }
 .navbar{
+  display: flex;
   width: 219px;
   padding: 7px 4px;
   border-bottom: 3px solid;

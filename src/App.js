@@ -3,9 +3,29 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
 
+const tab = [{
+  cl:'hom',
+  title: 'home',
+  link: 'home',
+  active: true
+},
+{cl:'serv',
+  title: 'services',
+  link: 'service',
+  active: false,
+  subMenu: ['for Entrepreneurs', 'for students', 'for hobbyists']
+},
+{ cl:'contact',
+  title: 'contact',
+  link: 'contact',
+  active: false
+}]
 function App() {
   return (
-   <Navbar/>
+    <ul className="navbar">{tab.map(el=> <Navbar item={el}/>)}
+    
+    </ul>
+    
   );
 }
 

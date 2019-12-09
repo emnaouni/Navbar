@@ -1,11 +1,7 @@
 import React from'react';
 import './App.css';
 
-const Dropdown=()=><div className="navDrop">
-       <ul><li> For entrepreneurs</li>
-        <li> For students</li>
-        <li> for hobbyists</li>
-    </ul></div>
+const Dropdown=(props)=>
+        <li className="dropdown">{props.miniMenu} </li>
         
-
 export default Dropdown;
